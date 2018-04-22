@@ -2,7 +2,7 @@
 --primos = primos' [2..10]
 
 --primos' (x:xs) = id
-primos2 listaInf = filter (  ((==2).length.(filter (==0))) (map (mod num) [1..num]) ) listaInf
+primos2 listaInf = filter (  id ) listaInf
 
 esPrimo num = length (filter (==0) (map (mod num) [1..num])) == 2
 
